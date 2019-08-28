@@ -1,0 +1,999 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="https://weliveindetail.github.io/git-baobab/baobab-static.v0.3.css">
+<body>
+<svg id="baobab"></svg>
+<p>git baobab c89a3d78f43d81b9cff7b9248772ddf14d21b749</p>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+const baobab_hash_since = "c89a3d78f43d81b9cff7b9248772ddf14d21b749";
+const baobab_hash_head = "e82a53603ae3fed2215a44b5ac603db00a780c02";
+const baobab_data = {n: "llvm-9", m: 22294, t: 15395508, children: [
+  {n: "clang-tools-extra", m: 1998, t: 227737, children: [
+    {n: "clangd", m: 1869, t: 62379, children: [
+      {n: "CMakeLists.txt", m: 1, t: 161},
+      {n: "ClangdServer.cpp", m: 9, t: 609},
+      {n: "ClangdUnit.cpp", m: 5, t: 718},
+      {n: "Diagnostics.cpp", m: 50, t: 623},
+      {n: "Diagnostics.h", m: 2, t: 157},
+      {n: "FS.cpp", m: 6, t: 121},
+      {n: "FS.h", m: 8, t: 79},
+      {n: "FormattedString.cpp", m: 11, t: 199},
+      {n: "GlobalCompilationDatabase.cpp", m: 106, t: 332},
+      {n: "GlobalCompilationDatabase.h", m: 16, t: 153},
+      {n: "Headers.cpp", m: 2, t: 235},
+      {n: "IncludeFixer.cpp", m: 71, t: 458},
+      {n: "IncludeFixer.h", m: 4, t: 98},
+      {n: "Quality.cpp", m: 7, t: 504},
+      {n: "QueryDriverDatabase.cpp", m: 6, t: 285},
+      {n: "SourceCode.cpp", m: 67, t: 823},
+      {n: "SourceCode.h", m: 8, t: 222},
+      {n: "TUScheduler.cpp", m: 9, t: 1009},
+      {n: "XRefs.cpp", m: 4, t: 1313},
+      {n: "index", m: 646, t: 8955, children: [
+        {n: "Background.cpp", m: 268, t: 519},
+        {n: "Background.h", m: 38, t: 200},
+        {n: "BackgroundIndexLoader.cpp", m: 143, t: 143},
+        {n: "BackgroundIndexLoader.h", m: 54, t: 54},
+        {n: "BackgroundIndexStorage.cpp", m: 40, t: 176},
+        {n: "BackgroundRebuild.cpp", m: 8, t: 137},
+        {n: "BackgroundRebuild.h", m: 5, t: 102},
+        {n: "IndexAction.cpp", m: 50, t: 259},
+        {n: "Serialization.cpp", m: 4, t: 734},
+        {n: "SymbolCollector.cpp", m: 31, t: 743},
+        {n: "SymbolCollector.h", m: 5, t: 173}
+      ]},
+      {n: "refactor", m: 19, t: 1398, children: [
+        {n: "Rename.cpp", m: 3, t: 206},
+        {n: "Tweak.cpp", m: 3, t: 85},
+        {n: "Tweak.h", m: 5, t: 133},
+        {n: "tweaks", m: 8, t: 944, children: [
+          {n: "DumpAST.cpp", m: 5, t: 144},
+          {n: "ExtractVariable.cpp", m: 3, t: 244}
+        ]}
+      ]},
+      {n: "test", m: 19, t: 2683, children: [
+        {n: "Inputs", m: 4, t: 106, children: [
+          {n: "background-index", m: 4, t: 62, children: [
+            {n: "definition.jsonrpc", m: 2, t: 51},
+            {n: "foo.cpp", m: 2, t: 2}
+          ]}
+        ]},
+        {n: "background-index.test", m: 4, t: 22},
+        {n: "log.test", m: 9, t: 9},
+        {n: "system-include-extractor.test", m: 2, t: 51}
+      ]},
+      {n: "tool", m: 545, t: 701, children: [
+        {n: "ClangdMain.cpp", m: 545, t: 670}
+      ]},
+      {n: "unittests", m: 248, t: 20836, children: [
+        {n: "BackgroundIndexTests.cpp", m: 16, t: 717},
+        {n: "DiagnosticsTests.cpp", m: 44, t: 963},
+        {n: "FormattedStringTests.cpp", m: 38, t: 199},
+        {n: "GlobalCompilationDatabaseTests.cpp", m: 28, t: 311},
+        {n: "SourceCodeTests.cpp", m: 40, t: 510},
+        {n: "SymbolCollectorTests.cpp", m: 3, t: 1299},
+        {n: "TweakTests.cpp", m: 69, t: 673},
+        {n: "XRefsTests.cpp", m: 10, t: 2178}
+      ]}
+    ]},
+    {n: "docs", m: 129, t: 18567, children: [
+      {n: "ReleaseNotes.rst", m: 93, t: 362},
+      {n: "clang-tidy", m: 36, t: 12807, children: [
+        {n: "checks", m: 36, t: 11837, children: [
+          {n: "cert-dcl21-cpp.rst", m: 16, t: 23},
+          {n: "cert-err09-cpp.rst", m: 5, t: 14},
+          {n: "cert-oop11-cpp.rst", m: 6, t: 15},
+          {n: "misc-throw-by-value-catch-by-reference.rst", m: 9, t: 52}
+        ]}
+      ]}
+    ]}
+  ]},
+  {n: "clang", m: 12906, t: 2839103, children: [
+    {n: "CMakeLists.txt", m: 1, t: 857},
+    {n: "docs", m: 8943, t: 66754, children: [
+      {n: "AttributeReference.rst", m: 5545, t: 5546},
+      {n: "ClangCommandLineReference.rst", m: 355, t: 3318},
+      {n: "ClangStaticAnalyzer.rst", m: 2, t: 22},
+      {n: "DiagnosticsReference.rst", m: 2596, t: 12736},
+      {n: "LanguageExtensions.rst", m: 122, t: 3421},
+      {n: "ReleaseNotes.rst", m: 201, t: 446},
+      {n: "UsersManual.rst", m: 122, t: 3395}
+    ]},
+    {n: "examples", m: 97, t: 646, children: [
+      {n: "clang-interpreter", m: 97, t: 376, children: [
+        {n: "main.cpp", m: 97, t: 230}
+      ]}
+    ]},
+    {n: "include", m: 29, t: 255752, children: [
+      {n: "clang", m: 29, t: 247922, children: [
+        {n: "AST", m: 11, t: 81965, children: [
+          {n: "ExprCXX.h", m: 11, t: 4755}
+        ]},
+        {n: "Basic", m: 12, t: 52888, children: [
+          {n: "DiagnosticSemaKinds.td", m: 4, t: 9762},
+          {n: "TargetInfo.h", m: 8, t: 1393}
+        ]},
+        {n: "Driver", m: 2, t: 8023, children: [
+          {n: "Options.td", m: 2, t: 3229}
+        ]},
+        {n: "Frontend", m: 3, t: 5580, children: [
+          {n: "LangStandards.def", m: 3, t: 189}
+        ]},
+        {n: "Sema", m: 1, t: 25260, children: [
+          {n: "Sema.h", m: 1, t: 11347}
+        ]}
+      ]}
+    ]},
+    {n: "lib", m: 1312, t: 960069, children: [
+      {n: "AST", m: 13, t: 111354, children: [
+        {n: "ASTContext.cpp", m: 2, t: 10646},
+        {n: "ExprCXX.cpp", m: 7, t: 1674},
+        {n: "ItaniumCXXABI.cpp", m: 2, t: 228},
+        {n: "MicrosoftCXXABI.cpp", m: 2, t: 263}
+      ]},
+      {n: "Basic", m: 70, t: 23338, children: [
+        {n: "Targets", m: 70, t: 12304, children: [
+          {n: "AArch64.cpp", m: 16, t: 659},
+          {n: "OSTargets.h", m: 5, t: 867},
+          {n: "RISCV.cpp", m: 21, t: 140},
+          {n: "RISCV.h", m: 20, t: 131},
+          {n: "SPIR.h", m: 2, t: 132},
+          {n: "X86.h", m: 6, t: 855}
+        ]}
+      ]},
+      {n: "CodeGen", m: 620, t: 153542, children: [
+        {n: "CGBuiltin.cpp", m: 290, t: 14346},
+        {n: "CGExprAgg.cpp", m: 19, t: 2023},
+        {n: "CGStmt.cpp", m: 8, t: 2413},
+        {n: "ItaniumCXXABI.cpp", m: 7, t: 4280},
+        {n: "MicrosoftCXXABI.cpp", m: 7, t: 4297},
+        {n: "TargetInfo.cpp", m: 289, t: 9929}
+      ]},
+      {n: "DirectoryWatcher", m: 3, t: 712, children: [
+        {n: "linux", m: 3, t: 351, children: [
+          {n: "DirectoryWatcher-linux.cpp", m: 3, t: 351}
+        ]}
+      ]},
+      {n: "Driver", m: 58, t: 40466, children: [
+        {n: "ToolChains", m: 58, t: 30960, children: [
+          {n: "Clang.cpp", m: 58, t: 6365}
+        ]}
+      ]},
+      {n: "Frontend", m: 21, t: 36666, children: [
+        {n: "ASTUnit.cpp", m: 1, t: 2717},
+        {n: "CompilerInvocation.cpp", m: 2, t: 3587},
+        {n: "InitPreprocessor.cpp", m: 18, t: 1181}
+      ]},
+      {n: "Headers", m: 235, t: 115260, children: [
+        {n: "emmintrin.h", m: 6, t: 4981},
+        {n: "opencl-c-base.h", m: 17, t: 571},
+        {n: "opencl-c.h", m: 212, t: 16502}
+      ]},
+      {n: "Lex", m: 14, t: 24791, children: [
+        {n: "PPDirectives.cpp", m: 14, t: 3009}
+      ]},
+      {n: "Sema", m: 266, t: 227492, children: [
+        {n: "Sema.cpp", m: 1, t: 2253},
+        {n: "SemaDecl.cpp", m: 32, t: 17447},
+        {n: "SemaDeclCXX.cpp", m: 33, t: 15754},
+        {n: "SemaExprCXX.cpp", m: 6, t: 7939},
+        {n: "SemaInit.cpp", m: 16, t: 9566},
+        {n: "SemaOpenMP.cpp", m: 107, t: 15309},
+        {n: "SemaStmtAsm.cpp", m: 32, t: 930},
+        {n: "SemaTemplate.cpp", m: 21, t: 10477},
+        {n: "SemaType.cpp", m: 18, t: 8447}
+      ]},
+      {n: "StaticAnalyzer", m: 12, t: 77904, children: [
+        {n: "Checkers", m: 12, t: 43557, children: [
+          {n: "IteratorChecker.cpp", m: 12, t: 2389}
+        ]}
+      ]}
+    ]},
+    {n: "test", m: 2509, t: 1363086, children: [
+      {n: "Analysis", m: 14, t: 231684, children: [
+        {n: "Inputs", m: 3, t: 125992, children: [
+          {n: "system-header-simulator-cxx.h", m: 3, t: 912}
+        ]},
+        {n: "diagnostics", m: 2, t: 7444, children: [
+          {n: "explicit-suppression.cpp", m: 2, t: 24}
+        ]},
+        {n: "iterator-range.cpp", m: 5, t: 243},
+        {n: "retain-release.m", m: 4, t: 2400}
+      ]},
+      {n: "CXX", m: 44, t: 52472, children: [
+        {n: "dcl.decl", m: 10, t: 3908, children: [
+          {n: "dcl.decomp", m: 10, t: 578, children: [
+            {n: "p3.cpp", m: 10, t: 303}
+          ]}
+        ]},
+        {n: "drs", m: 34, t: 11269, children: [
+          {n: "dr22xx.cpp", m: 9, t: 37},
+          {n: "dr23xx.cpp", m: 21, t: 79},
+          {n: "dr4xx.cpp", m: 4, t: 1229}
+        ]}
+      ]},
+      {n: "CodeGen", m: 1278, t: 243036, children: [
+        {n: "aarch64-sve-inline-asm.c", m: 13, t: 13},
+        {n: "arm64-microsoft-intrinsics.c", m: 4, t: 94},
+        {n: "pr41027.c", m: 20, t: 20},
+        {n: "riscv-atomics.c", m: 68, t: 68},
+        {n: "riscv-inline-asm.c", m: 18, t: 46},
+        {n: "riscv32-ilp32-ilp32f-abi.c", m: 6, t: 55},
+        {n: "riscv32-ilp32-ilp32f-ilp32d-abi.c", m: 4, t: 431},
+        {n: "riscv32-ilp32d-abi.c", m: 282, t: 282},
+        {n: "riscv32-ilp32f-abi.c", m: 45, t: 45},
+        {n: "riscv32-ilp32f-ilp32d-abi.c", m: 275, t: 275},
+        {n: "riscv64-lp64-lp64f-abi.c", m: 2, t: 34},
+        {n: "riscv64-lp64-lp64f-lp64d-abi.c", m: 4, t: 429},
+        {n: "riscv64-lp64d-abi.c", m: 272, t: 272},
+        {n: "riscv64-lp64f-lp64d-abi.c", m: 265, t: 265}
+      ]},
+      {n: "CodeGenCXX", m: 109, t: 84807, children: [
+        {n: "PR42665.cpp", m: 34, t: 34},
+        {n: "dllexport.cpp", m: 16, t: 1051},
+        {n: "mangle-address-space.cpp", m: 4, t: 64},
+        {n: "pr40771-ctad-with-lambda-copy-capture.cpp", m: 55, t: 55}
+      ]},
+      {n: "CodeGenOpenCL", m: 112, t: 7542, children: [
+        {n: "builtins.cl", m: 2, t: 83},
+        {n: "images.cl", m: 2, t: 12},
+        {n: "logical-ops.cl", m: 2, t: 57},
+        {n: "pipe_builtin.cl", m: 2, t: 73},
+        {n: "sampler.cl", m: 2, t: 91},
+        {n: "spir_version.cl", m: 2, t: 38},
+        {n: "to_addr_builtin.cl", m: 2, t: 89},
+        {n: "vector_literals_valid.cl", m: 75, t: 65},
+        {n: "vector_literals_nested.cl", m: 23, t: 0}
+      ]},
+      {n: "CodeGenOpenCLCXX", m: 138, t: 562, children: [
+        {n: "address-space-castoperators.cpp", m: 2, t: 14},
+        {n: "address-space-deduction.cl", m: 4, t: 46},
+        {n: "address-space-deduction2.cl", m: 2, t: 20},
+        {n: "addrspace-conversion.cl", m: 2, t: 7},
+        {n: "addrspace-derived-base.cl", m: 6, t: 22},
+        {n: "addrspace-of-this.cl", m: 46, t: 205},
+        {n: "addrspace-operators.cl", m: 10, t: 67},
+        {n: "addrspace-references.cl", m: 2, t: 14},
+        {n: "addrspace-with-class.cl", m: 34, t: 59},
+        {n: "atexit.cl", m: 2, t: 11},
+        {n: "global_init.cl", m: 2, t: 11},
+        {n: "local_addrspace_init.cl", m: 2, t: 20},
+        {n: "method-overload-address-space.cl", m: 16, t: 35},
+        {n: "template-address-spaces.cl", m: 8, t: 31}
+      ]},
+      {n: "Driver", m: 311, t: 38822, children: [
+        {n: "autocomplete.c", m: 6, t: 132},
+        {n: "cl-options.c", m: 10, t: 675},
+        {n: "clang_f_opts.c", m: 5, t: 578},
+        {n: "frame-pointer-elim.c", m: 84, t: 79},
+        {n: "opencl.cl", m: 4, t: 41},
+        {n: "riscv-abi.c", m: 20, t: 51},
+        {n: "riscv32-toolchain.c", m: 89, t: 276},
+        {n: "riscv64-toolchain.c", m: 89, t: 276},
+        {n: "unknown-std.cl", m: 2, t: 17},
+        {n: "xcore-opts.c", m: 2, t: 34}
+      ]},
+      {n: "Frontend", m: 5, t: 5484, children: [
+        {n: "opencl.cl", m: 2, t: 36},
+        {n: "stdlang.c", m: 3, t: 22}
+      ]},
+      {n: "Headers", m: 2, t: 1999, children: [
+        {n: "opencl-c-header.cl", m: 2, t: 97}
+      ]},
+      {n: "Index", m: 22, t: 28747, children: [
+        {n: "complete-qualified-cached.cpp", m: 22, t: 22}
+      ]},
+      {n: "OpenMP", m: 162, t: 218916, children: [
+        {n: "distribute_parallel_for_firstprivate_messages.cpp", m: 8, t: 365},
+        {n: "distribute_parallel_for_simd_firstprivate_messages.cpp", m: 8, t: 365},
+        {n: "distribute_simd_firstprivate_messages.cpp", m: 8, t: 365},
+        {n: "distribute_simd_misc_messages.c", m: 4, t: 1034},
+        {n: "for_misc_messages.c", m: 4, t: 401},
+        {n: "for_simd_misc_messages.c", m: 4, t: 765},
+        {n: "parallel_copyin_codegen.cpp", m: 27, t: 546},
+        {n: "parallel_for_firstprivate_messages.cpp", m: 8, t: 264},
+        {n: "parallel_for_misc_messages.c", m: 4, t: 316},
+        {n: "parallel_for_simd_firstprivate_messages.cpp", m: 8, t: 265},
+        {n: "simd_misc_messages.c", m: 4, t: 806},
+        {n: "target_parallel_for_firstprivate_messages.cpp", m: 8, t: 273},
+        {n: "target_parallel_for_misc_messages.c", m: 4, t: 316},
+        {n: "target_parallel_for_simd_firstprivate_messages.cpp", m: 8, t: 273},
+        {n: "target_parallel_for_simd_misc_messages.c", m: 4, t: 497},
+        {n: "target_simd_firstprivate_messages.cpp", m: 8, t: 273},
+        {n: "target_teams_distribute_parallel_for_simd_misc_messages.c", m: 4, t: 321},
+        {n: "target_teams_distribute_simd_misc_messages.c", m: 4, t: 321},
+        {n: "task_codegen.c", m: 15, t: 50},
+        {n: "taskloop_firstprivate_messages.cpp", m: 8, t: 328},
+        {n: "taskloop_simd_firstprivate_messages.cpp", m: 12, t: 328}
+      ]},
+      {n: "Parser", m: 6, t: 12920, children: [
+        {n: "opencl-cxx-keywords.cl", m: 4, t: 52},
+        {n: "opencl-cxx-virtual.cl", m: 2, t: 45}
+      ]},
+      {n: "Preprocessor", m: 33, t: 24204, children: [
+        {n: "aarch64-target-features.c", m: 2, t: 321},
+        {n: "predefined-macros.c", m: 2, t: 191},
+        {n: "riscv-target-features.c", m: 24, t: 73},
+        {n: "stringize_skipped.c", m: 5, t: 5}
+      ]},
+      {n: "Sema", m: 113, t: 44481, children: [
+        {n: "builtin-setjmp.c", m: 10, t: 10},
+        {n: "implicit-builtin-decl.c", m: 9, t: 71},
+        {n: "inline-asm-validate-riscv.c", m: 3, t: 23},
+        {n: "inline-asm-validate-x86.c", m: 25, t: 132},
+        {n: "warn-uninitialized-statement-expression.c", m: 56, t: 56},
+        {n: "pr41027.c", m: 10, t: 0}
+      ]},
+      {n: "SemaCXX", m: 45, t: 97779, children: [
+        {n: "cxx1z-class-template-argument-deduction.cpp", m: 9, t: 526},
+        {n: "cxx2a-adl-only-template-id.cpp", m: 8, t: 75},
+        {n: "pseudo-destructors.cpp", m: 4, t: 114},
+        {n: "vector.cpp", m: 24, t: 360}
+      ]},
+      {n: "SemaOpenCL", m: 56, t: 4438, children: [
+        {n: "address-spaces-conversions-cl2.0.cl", m: 6, t: 527},
+        {n: "address-spaces.cl", m: 2, t: 243},
+        {n: "builtin.cl", m: 2, t: 15},
+        {n: "clk_event_t.cl", m: 2, t: 26},
+        {n: "extension-version.cl", m: 4, t: 323},
+        {n: "extensions.cl", m: 2, t: 101},
+        {n: "invalid-image.cl", m: 2, t: 21},
+        {n: "invalid-pipes-cl2.0.cl", m: 2, t: 47},
+        {n: "sampler_t.cl", m: 7, t: 83},
+        {n: "vector_literals_const.cl", m: 27, t: 0}
+      ]},
+      {n: "SemaOpenCLCXX", m: 42, t: 348, children: [
+        {n: "address-space-deduction.cl", m: 24, t: 102},
+        {n: "address-space-of-this-class-scope.cl", m: 2, t: 18},
+        {n: "address-space-of-this.cl", m: 2, t: 14},
+        {n: "address-space-references.cl", m: 2, t: 15},
+        {n: "address-space-templates.cl", m: 2, t: 31},
+        {n: "address_space_overloading.cl", m: 2, t: 22},
+        {n: "kernel_invalid.cl", m: 2, t: 17},
+        {n: "method-overload-address-space.cl", m: 2, t: 20},
+        {n: "newdelete.cl", m: 2, t: 55},
+        {n: "restricted.cl", m: 2, t: 41}
+      ]},
+      {n: "SemaTemplate", m: 17, t: 19873, children: [
+        {n: "temp_arg_nontype_cxx11.cpp", m: 17, t: 67}
+      ]}
+    ]},
+    {n: "unittests", m: 15, t: 80239, children: [
+      {n: "Tooling", m: 15, t: 11496, children: [
+        {n: "Syntax", m: 15, t: 942, children: [
+          {n: "TokensTest.cpp", m: 15, t: 758}
+        ]}
+      ]}
+    ]}
+  ]},
+  {n: "compiler-rt", m: 272, t: 444994, children: [
+    {n: "CMakeLists.txt", m: 1, t: 516},
+    {n: "lib", m: 193, t: 218559, children: [
+      {n: "asan", m: 6, t: 20220, children: [
+        {n: "asan_posix.cc", m: 4, t: 117},
+        {n: "asan_rtl.cc", m: 2, t: 626}
+      ]},
+      {n: "builtins", m: 2, t: 25330, children: [
+        {n: "cpu_model.c", m: 2, t: 689}
+      ]},
+      {n: "interception", m: 9, t: 2518, children: [
+        {n: "interception_linux.cc", m: 9, t: 78}
+      ]},
+      {n: "msan", m: 6, t: 9906, children: [
+        {n: "msan.cc", m: 2, t: 675},
+        {n: "msan_linux.cc", m: 4, t: 262}
+      ]},
+      {n: "sanitizer_common", m: 169, t: 73548, children: [
+        {n: "sanitizer_interceptors_ioctl_netbsd.inc", m: 29, t: 1533},
+        {n: "sanitizer_linux.cc", m: 35, t: 2135},
+        {n: "sanitizer_platform_limits_netbsd.cc", m: 58, t: 2395},
+        {n: "sanitizer_platform_limits_netbsd.h", m: 47, t: 2405}
+      ]},
+      {n: "tsan", m: 1, t: 24931, children: [
+        {n: "rtl", m: 1, t: 19806, children: [
+          {n: "tsan_rtl.cc", m: 1, t: 1100}
+        ]}
+      ]}
+    ]},
+    {n: "test", m: 72, t: 208130, children: [
+      {n: "asan", m: 61, t: 17778, children: [
+        {n: "TestCases", m: 47, t: 17319, children: [
+          {n: "Linux", m: 42, t: 3642, children: [
+            {n: "dlopen-mixed-c-cxx.c", m: 42, t: 0}
+          ]},
+          {n: "Posix", m: 5, t: 2537, children: [
+            {n: "fread_fwrite.cc", m: 3, t: 34},
+            {n: "tsd_dtor_leak.cc", m: 2, t: 42}
+          ]}
+        ]},
+        {n: "Unit", m: 6, t: 38, children: [
+          {n: "lit.site.cfg.py.in", m: 6, t: 38}
+        ]},
+        {n: "lit.cfg.py", m: 8, t: 238}
+      ]},
+      {n: "msan", m: 1, t: 5790, children: [
+        {n: "tzset.cc", m: 1, t: 16}
+      ]},
+      {n: "tsan", m: 2, t: 14833, children: [
+        {n: "ignored-interceptors-mmap.cc", m: 2, t: 61}
+      ]},
+      {n: "xray", m: 8, t: 1558, children: [
+        {n: "Unit", m: 8, t: 32, children: [
+          {n: "lit.site.cfg.py.in", m: 8, t: 32}
+        ]}
+      ]}
+    ]},
+    {n: "utils", m: 6, t: 3619, children: [
+      {n: "generate_netbsd_ioctls.awk", m: 6, t: 640}
+    ]}
+  ]},
+  {n: "libcxx", m: 222, t: 803015, children: [
+    {n: "CMakeLists.txt", m: 2, t: 836},
+    {n: "include", m: 187, t: 138384, children: [
+      {n: "__locale", m: 2, t: 1553},
+      {n: "__threading_support", m: 105, t: 490},
+      {n: "mutex", m: 6, t: 711},
+      {n: "thread", m: 74, t: 424}
+    ]},
+    {n: "src", m: 12, t: 17271, children: [
+      {n: "mutex.cpp", m: 12, t: 260}
+    ]},
+    {n: "utils", m: 21, t: 22424, children: [
+      {n: "google-benchmark", m: 21, t: 16631, children: [
+        {n: "README.LLVM", m: 6, t: 12},
+        {n: "src", m: 15, t: 5609, children: [
+          {n: "cycleclock.h", m: 15, t: 192}
+        ]}
+      ]}
+    ]}
+  ]},
+  {n: "libcxxabi", m: 2, t: 59245, children: [
+    {n: "CMakeLists.txt", m: 2, t: 506}
+  ]},
+  {n: "libunwind", m: 2, t: 18559, children: [
+    {n: "CMakeLists.txt", m: 2, t: 383}
+  ]},
+  {n: "lld", m: 955, t: 215802, children: [
+    {n: "CMakeLists.txt", m: 1, t: 225},
+    {n: "COFF", m: 160, t: 13811, children: [
+      {n: "Config.h", m: 1, t: 232},
+      {n: "Driver.cpp", m: 44, t: 1917},
+      {n: "Driver.h", m: 2, t: 202},
+      {n: "InputFiles.cpp", m: 8, t: 881},
+      {n: "InputFiles.h", m: 2, t: 321},
+      {n: "SymbolTable.cpp", m: 20, t: 615},
+      {n: "SymbolTable.h", m: 3, t: 132},
+      {n: "Symbols.cpp", m: 22, t: 131},
+      {n: "Symbols.h", m: 11, t: 444},
+      {n: "Writer.cpp", m: 47, t: 1932}
+    ]},
+    {n: "ELF", m: 53, t: 32779, children: [
+      {n: "InputFiles.cpp", m: 4, t: 1645},
+      {n: "Symbols.cpp", m: 29, t: 663},
+      {n: "Symbols.h", m: 6, t: 558},
+      {n: "SyntheticSections.cpp", m: 14, t: 3630}
+    ]},
+    {n: "MinGW", m: 4, t: 493, children: [
+      {n: "Driver.cpp", m: 2, t: 354},
+      {n: "Options.td", m: 2, t: 116}
+    ]},
+    {n: "docs", m: 34, t: 3763, children: [
+      {n: "ReleaseNotes.rst", m: 34, t: 107}
+    ]},
+    {n: "test", m: 687, t: 128214, children: [
+      {n: "COFF", m: 175, t: 35429, children: [
+        {n: "Inputs", m: 27, t: 11971, children: [
+          {n: "libcall-archive.ll", m: 6, t: 6},
+          {n: "libcall-archive.s", m: 2, t: 2},
+          {n: "mangled-symbol.s", m: 9, t: 9},
+          {n: "tlssup.s", m: 10, t: 10}
+        ]},
+        {n: "align.s", m: 45, t: 45},
+        {n: "autoimport-gnu-implib.s", m: 7, t: 31},
+        {n: "autoimport-x86.s", m: 9, t: 59},
+        {n: "libcall-archive.ll", m: 22, t: 22},
+        {n: "multiple-resource-objs.test", m: 2, t: 13},
+        {n: "thin-archive.s", m: 36, t: 36},
+        {n: "tls_suffix_sorting.s", m: 27, t: 27}
+      ]},
+      {n: "ELF", m: 101, t: 71765, children: [
+        {n: "archive-thin-missing-member.s", m: 14, t: 26},
+        {n: "arm-exidx-partial-discard.s", m: 37, t: 37},
+        {n: "ppc64-dynamic-relocations.s", m: 50, t: 0}
+      ]},
+      {n: "MinGW", m: 4, t: 227, children: [
+        {n: "driver.test", m: 4, t: 206}
+      ]},
+      {n: "wasm", m: 407, t: 8746, children: [
+        {n: "data-layout.ll", m: 2, t: 162},
+        {n: "data-segments.ll", m: 13, t: 119},
+        {n: "import-memory.test", m: 4, t: 50},
+        {n: "relocatable.ll", m: 360, t: 289},
+        {n: "shared-memory.yaml", m: 12, t: 75},
+        {n: "tls.ll", m: 16, t: 79}
+      ]}
+    ]},
+    {n: "wasm", m: 16, t: 7323, children: [
+      {n: "Driver.cpp", m: 5, t: 794},
+      {n: "Options.td", m: 4, t: 201},
+      {n: "Writer.cpp", m: 7, t: 973}
+    ]}
+  ]},
+  {n: "lldb", m: 502, t: 971835, children: [
+    {n: "CMakeLists.txt", m: 13, t: 238},
+    {n: "cmake", m: 72, t: 1152, children: [
+      {n: "modules", m: 72, t: 1091, children: [
+        {n: "AddLLDB.cmake", m: 24, t: 302},
+        {n: "LLDBConfig.cmake", m: 48, t: 459}
+      ]}
+    ]},
+    {n: "packages", m: 146, t: 150340, children: [
+      {n: "Python", m: 146, t: 150340, children: [
+        {n: "lldbsuite", m: 146, t: 150340, children: [
+          {n: "test", m: 146, t: 146736, children: [
+            {n: "expression_command", m: 60, t: 6778, children: [
+              {n: "multiline-completion", m: 60, t: 60, children: [
+                {n: "Makefile", m: 3, t: 3},
+                {n: "TestMultilineCompletion.py", m: 52, t: 52},
+                {n: "main.c", m: 5, t: 5}
+              ]}
+            ]},
+            {n: "functionalities", m: 86, t: 52368, children: [
+              {n: "exec", m: 86, t: 153, children: [
+                {n: "TestExec.py", m: 4, t: 113},
+                {n: "main.cpp", m: 82, t: 16}
+              ]}
+            ]}
+          ]}
+        ]}
+      ]}
+    ]},
+    {n: "source", m: 40, t: 495123, children: [
+      {n: "Core", m: 2, t: 29858, children: [
+        {n: "IOHandler.cpp", m: 2, t: 4671}
+      ]},
+      {n: "Plugins", m: 38, t: 273148, children: [
+        {n: "Process", m: 38, t: 88651, children: [
+          {n: "Linux", m: 9, t: 10470, children: [
+            {n: "NativeProcessLinux.cpp", m: 9, t: 2076}
+          ]},
+          {n: "Windows", m: 29, t: 3952, children: [
+            {n: "Common", m: 29, t: 3952, children: [
+              {n: "CMakeLists.txt", m: 13, t: 25},
+              {n: "x64", m: 8, t: 587, children: [
+                {n: "RegisterContextWindows_x64.cpp", m: 4, t: 540},
+                {n: "RegisterContextWindows_x64.h", m: 4, t: 47}
+              ]},
+              {n: "x86", m: 8, t: 339, children: [
+                {n: "RegisterContextWindows_x86.cpp", m: 4, t: 288},
+                {n: "RegisterContextWindows_x86.h", m: 4, t: 51}
+              ]}
+            ]}
+          ]}
+        ]}
+      ]}
+    ]},
+    {n: "test", m: 35, t: 183, children: [
+      {n: "CMakeLists.txt", m: 35, t: 148}
+    ]},
+    {n: "tools", m: 185, t: 95938, children: [
+      {n: "debugserver", m: 185, t: 44344, children: [
+        {n: "source", m: 185, t: 42265, children: [
+          {n: "CMakeLists.txt", m: 185, t: 258}
+        ]}
+      ]}
+    ]},
+    {n: "unittests", m: 11, t: 26240, children: [
+      {n: "CMakeLists.txt", m: 2, t: 83},
+      {n: "tools", m: 9, t: 1314, children: [
+        {n: "lldb-server", m: 9, t: 1261, children: [
+          {n: "CMakeLists.txt", m: 9, t: 31}
+        ]}
+      ]}
+    ]}
+  ]},
+  {n: "llvm", m: 5433, t: 8351433, children: [
+    {n: "CMakeLists.txt", m: 9, t: 1100},
+    {n: "cmake", m: 8, t: 7977, children: [
+      {n: "config-ix.cmake", m: 6, t: 668},
+      {n: "modules", m: 2, t: 5319, children: [
+        {n: "LLVMInstallSymlink.cmake", m: 2, t: 21}
+      ]}
+    ]},
+    {n: "docs", m: 134, t: 135698, children: [
+      {n: "GettingStarted.rst", m: 5, t: 1141},
+      {n: "ReleaseNotes.rst", m: 129, t: 292}
+    ]},
+    {n: "include", m: 137, t: 373963, children: [
+      {n: "llvm", m: 137, t: 364475, children: [
+        {n: "Analysis", m: 2, t: 35721, children: [
+          {n: "AliasAnalysis.h", m: 2, t: 1223}
+        ]},
+        {n: "CodeGen", m: 29, t: 57874, children: [
+          {n: "SelectionDAG.h", m: 28, t: 1786},
+          {n: "TargetLowering.h", m: 1, t: 4092}
+        ]},
+        {n: "ExecutionEngine", m: 1, t: 14187, children: [
+          {n: "Orc", m: 1, t: 10619, children: [
+            {n: "LambdaResolver.h", m: 1, t: 84}
+          ]}
+        ]},
+        {n: "IR", m: 1, t: 68468, children: [
+          {n: "InlineAsm.h", m: 1, t: 366}
+        ]},
+        {n: "MC", m: 13, t: 15191, children: [
+          {n: "MCContext.h", m: 13, t: 767}
+        ]},
+        {n: "Support", m: 80, t: 41174, children: [
+          {n: "AArch64TargetParser.def", m: 58, t: 141},
+          {n: "AArch64TargetParser.h", m: 2, t: 128},
+          {n: "ARMTargetParser.h", m: 20, t: 267}
+        ]},
+        {n: "Transforms", m: 11, t: 16239, children: [
+          {n: "Utils", m: 11, t: 6092, children: [
+            {n: "BypassSlowDivision.h", m: 11, t: 72}
+          ]}
+        ]}
+      ]}
+    ]},
+    {n: "lib", m: 1114, t: 1926443, children: [
+      {n: "CodeGen", m: 112, t: 247009, children: [
+        {n: "AsmPrinter", m: 1, t: 23233, children: [
+          {n: "AsmPrinterInlineAsm.cpp", m: 1, t: 664}
+        ]},
+        {n: "CodeGenPrepare.cpp", m: 3, t: 7351},
+        {n: "LiveDebugValues.cpp", m: 17, t: 1329},
+        {n: "MachineCSE.cpp", m: 25, t: 896},
+        {n: "MachineModuleInfo.cpp", m: 2, t: 329},
+        {n: "SelectionDAG", m: 64, t: 85427, children: [
+          {n: "ScheduleDAGSDNodes.cpp", m: 10, t: 1033},
+          {n: "SelectionDAG.cpp", m: 1, t: 9595},
+          {n: "SelectionDAGBuilder.cpp", m: 35, t: 10479},
+          {n: "TargetLowering.cpp", m: 18, t: 6288}
+        ]}
+      ]},
+      {n: "IR", m: 11, t: 54736, children: [
+        {n: "Core.cpp", m: 11, t: 4052}
+      ]},
+      {n: "MC", m: 10, t: 33355, children: [
+        {n: "MCContext.cpp", m: 6, t: 707},
+        {n: "MCParser", m: 4, t: 10293, children: [
+          {n: "AsmParser.cpp", m: 4, t: 5962}
+        ]}
+      ]},
+      {n: "Object", m: 4, t: 16201, children: [
+        {n: "RelocationResolver.cpp", m: 4, t: 550}
+      ]},
+      {n: "Support", m: 6, t: 55873, children: [
+        {n: "AArch64TargetParser.cpp", m: 4, t: 215},
+        {n: "Unix", m: 2, t: 3893, children: [
+          {n: "Path.inc", m: 2, t: 1226}
+        ]}
+      ]},
+      {n: "Target", m: 818, t: 1063285, children: [
+        {n: "AArch64", m: 475, t: 118345, children: [
+          {n: "AArch64.td", m: 2, t: 822},
+          {n: "AArch64ISelLowering.cpp", m: 18, t: 12083},
+          {n: "AArch64InstrInfo.td", m: 2, t: 6943},
+          {n: "AArch64SVEInstrInfo.td", m: 164, t: 1430},
+          {n: "AArch64TargetTransformInfo.cpp", m: 13, t: 1015},
+          {n: "AArch64TargetTransformInfo.h", m: 3, t: 187},
+          {n: "AsmParser", m: 2, t: 5790, children: [
+            {n: "AArch64AsmParser.cpp", m: 2, t: 5762}
+          ]},
+          {n: "SVEInstrFormats.td", m: 271, t: 5833}
+        ]},
+        {n: "ARM", m: 14, t: 140056, children: [
+          {n: "ARMISelLowering.cpp", m: 11, t: 15889},
+          {n: "ARMInstrThumb.td", m: 3, t: 1737}
+        ]},
+        {n: "AVR", m: 6, t: 14097, children: [
+          {n: "AVRISelLowering.cpp", m: 6, t: 2049}
+        ]},
+        {n: "BPF", m: 80, t: 8803, children: [
+          {n: "BPFAbstractMemberAccess.cpp", m: 22, t: 480},
+          {n: "BTFDebug.cpp", m: 52, t: 1326},
+          {n: "BTFDebug.h", m: 6, t: 375}
+        ]},
+        {n: "Mips", m: 19, t: 80738, children: [
+          {n: "AsmParser", m: 19, t: 8509, children: [
+            {n: "MipsAsmParser.cpp", m: 19, t: 8484}
+          ]}
+        ]},
+        {n: "RISCV", m: 121, t: 15509, children: [
+          {n: "AsmParser", m: 18, t: 1818, children: [
+            {n: "RISCVAsmParser.cpp", m: 18, t: 1793}
+          ]},
+          {n: "RISCVFrameLowering.cpp", m: 48, t: 408},
+          {n: "RISCVISelDAGToDAG.cpp", m: 3, t: 292},
+          {n: "RISCVISelLowering.cpp", m: 48, t: 2665},
+          {n: "RISCVISelLowering.h", m: 4, t: 214}
+        ]},
+        {n: "Sparc", m: 2, t: 15947, children: [
+          {n: "SparcISelLowering.cpp", m: 2, t: 3417}
+        ]},
+        {n: "SystemZ", m: 2, t: 45185, children: [
+          {n: "SystemZISelLowering.cpp", m: 2, t: 7768}
+        ]},
+        {n: "TargetMachine.cpp", m: 8, t: 284},
+        {n: "X86", m: 91, t: 180720, children: [
+          {n: "X86.td", m: 3, t: 1254},
+          {n: "X86ISelDAGToDAG.cpp", m: 39, t: 5080},
+          {n: "X86ISelLowering.cpp", m: 46, t: 45520},
+          {n: "X86Subtarget.cpp", m: 3, t: 380}
+        ]}
+      ]},
+      {n: "Transforms", m: 153, t: 232313, children: [
+        {n: "InstCombine", m: 25, t: 34162, children: [
+          {n: "InstCombineCompares.cpp", m: 25, t: 5752}
+        ]},
+        {n: "Scalar", m: 120, t: 77780, children: [
+          {n: "DivRemPairs.cpp", m: 114, t: 278},
+          {n: "SpeculateAroundPHIs.cpp", m: 6, t: 829}
+        ]},
+        {n: "Utils", m: 8, t: 41631, children: [
+          {n: "LoopUnroll.cpp", m: 8, t: 978}
+        ]}
+      ]}
+    ]},
+    {n: "test", m: 3935, t: 5439023, children: [
+      {n: "CodeGen", m: 2363, t: 2591811, children: [
+        {n: "AArch64", m: 242, t: 211112, children: [
+          {n: "O3-pipeline.ll", m: 2, t: 181},
+          {n: "arm64-indexed-vector-ldst.ll", m: 19, t: 6340},
+          {n: "arm64-inline-asm-error-I.ll", m: 2, t: 11},
+          {n: "arm64-inline-asm-error-J.ll", m: 2, t: 11},
+          {n: "arm64-inline-asm-error-K.ll", m: 2, t: 11},
+          {n: "arm64-inline-asm-error-L.ll", m: 2, t: 11},
+          {n: "arm64-inline-asm-error-M.ll", m: 2, t: 11},
+          {n: "arm64-inline-asm-error-N.ll", m: 2, t: 11},
+          {n: "bcmp-inline-small.ll", m: 44, t: 44},
+          {n: "callbr-asm-label.ll", m: 63, t: 63},
+          {n: "callbr-asm-obj-file.ll", m: 102, t: 102}
+        ]},
+        {n: "AMDGPU", m: 6, t: 325212, children: [
+          {n: "propagate-attributes-bitcast-function.ll", m: 2, t: 23},
+          {n: "propagate-attributes-clone.ll", m: 2, t: 87},
+          {n: "propagate-attributes-single-set.ll", m: 2, t: 72}
+        ]},
+        {n: "ARM", m: 2, t: 155571, children: [
+          {n: "O3-pipeline.ll", m: 2, t: 157}
+        ]},
+        {n: "BPF", m: 552, t: 10144, children: [
+          {n: "CORE", m: 483, t: 2060, children: [
+            {n: "offset-reloc-access-str.ll", m: 95, t: 95},
+            {n: "offset-reloc-typedef-array.ll", m: 97, t: 97},
+            {n: "offset-reloc-typedef-struct.ll", m: 90, t: 90},
+            {n: "offset-reloc-typedef-union.ll", m: 90, t: 90},
+            {n: "offset-reloc-typedef.ll", m: 111, t: 111}
+          ]},
+          {n: "objdump_two_funcs.ll", m: 69, t: 69}
+        ]},
+        {n: "Hexagon", m: 6, t: 88980, children: [
+          {n: "pic-jt-big.ll", m: 2, t: 78},
+          {n: "pic-sdata.ll", m: 4, t: 37}
+        ]},
+        {n: "PowerPC", m: 82, t: 158514, children: [
+          {n: "machine-pre.ll", m: 82, t: 198}
+        ]},
+        {n: "RISCV", m: 797, t: 50129, children: [
+          {n: "add-before-shl.ll", m: 40, t: 133},
+          {n: "inline-asm-d-constraint-f.ll", m: 40, t: 40},
+          {n: "inline-asm-f-constraint-f.ll", m: 34, t: 34},
+          {n: "inline-asm-invalid.ll", m: 18, t: 32},
+          {n: "inline-asm.ll", m: 25, t: 223},
+          {n: "stack-realignment-unsupported.ll", m: 13, t: 13},
+          {n: "stack-realignment.ll", m: 627, t: 627}
+        ]},
+        {n: "SPARC", m: 18, t: 6334, children: [
+          {n: "tls.ll", m: 18, t: 130}
+        ]},
+        {n: "Thumb", m: 56, t: 11770, children: [
+          {n: "pr42760.ll", m: 56, t: 56}
+        ]},
+        {n: "X86", m: 602, t: 1183327, children: [
+          {n: "O3-pipeline.ll", m: 2, t: 178},
+          {n: "callbr-asm-label-addr.ll", m: 30, t: 30},
+          {n: "callbr-asm-obj-file.ll", m: 19, t: 19},
+          {n: "callbr-asm.ll", m: 16, t: 133},
+          {n: "cmpxchg8b.ll", m: 1, t: 55},
+          {n: "combine-sbb.ll", m: 30, t: 344},
+          {n: "inline-asm-bad-constraint-n.ll", m: 2, t: 10},
+          {n: "inline-asm-e-constraint.ll", m: 17, t: 17},
+          {n: "inline-asm-imm-out-of-range.ll", m: 7, t: 7},
+          {n: "inline-asm-n-constraint.ll", m: 13, t: 13},
+          {n: "label-heapallocsite.ll", m: 173, t: 152},
+          {n: "mingw-refptr.ll", m: 7, t: 101},
+          {n: "oddsubvector.ll", m: 268, t: 428},
+          {n: "pr42992.ll", m: 17, t: 17}
+        ]}
+      ]},
+      {n: "DebugInfo", m: 115, t: 101529, children: [
+        {n: "MIR", m: 115, t: 5572, children: [
+          {n: "X86", m: 115, t: 4097, children: [
+            {n: "live-debug-values-restore.mir", m: 115, t: 300}
+          ]}
+        ]}
+      ]},
+      {n: "MC", m: 487, t: 1620164, children: [
+        {n: "AArch64", m: 244, t: 127101, children: [
+          {n: "SVE", m: 166, t: 55308, children: [
+            {n: "decp.s", m: 26, t: 108},
+            {n: "incp.s", m: 28, t: 108},
+            {n: "sqdecp.s", m: 28, t: 108},
+            {n: "sqincp.s", m: 28, t: 108},
+            {n: "uqdecp.s", m: 28, t: 108},
+            {n: "uqincp.s", m: 28, t: 108}
+          ]},
+          {n: "SVE2", m: 78, t: 22005, children: [
+            {n: "bdep-diagnostics.s", m: 2, t: 26},
+            {n: "bdep.s", m: 16, t: 32},
+            {n: "bext-diagnostics.s", m: 2, t: 26},
+            {n: "bext.s", m: 16, t: 32},
+            {n: "bgrp-diagnostics.s", m: 2, t: 26},
+            {n: "bgrp.s", m: 16, t: 32},
+            {n: "directive-arch-negative.s", m: 6, t: 31},
+            {n: "directive-arch.s", m: 2, t: 21},
+            {n: "directive-arch_extension-negative.s", m: 6, t: 31},
+            {n: "directive-arch_extension.s", m: 2, t: 21},
+            {n: "directive-cpu-negative.s", m: 6, t: 31},
+            {n: "directive-cpu.s", m: 2, t: 21}
+          ]}
+        ]},
+        {n: "Mips", m: 112, t: 36420, children: [
+          {n: "mips-expansions.s", m: 59, t: 1415},
+          {n: "mips64-expansions.s", m: 53, t: 521}
+        ]},
+        {n: "RISCV", m: 131, t: 9603, children: [
+          {n: "rv32i-aliases-invalid.s", m: 1, t: 26},
+          {n: "rv64i-aliases-invalid.s", m: 1, t: 29},
+          {n: "rvi-pseudos.s", m: 129, t: 183}
+        ]}
+      ]},
+      {n: "Transforms", m: 947, t: 615772, children: [
+        {n: "CodeGenPrepare", m: 17, t: 6979, children: [
+          {n: "sink-shift-and-trunc.ll", m: 17, t: 127}
+        ]},
+        {n: "DivRemPairs", m: 656, t: 1036, children: [
+          {n: "PowerPC", m: 340, t: 523, children: [
+            {n: "div-expanded-rem-pair.ll", m: 172, t: 172},
+            {n: "div-rem-pairs.ll", m: 168, t: 349}
+          ]},
+          {n: "X86", m: 316, t: 513, children: [
+            {n: "div-expanded-rem-pair.ll", m: 170, t: 170},
+            {n: "div-rem-pairs.ll", m: 146, t: 341}
+          ]}
+        ]},
+        {n: "InstCombine", m: 123, t: 160051, children: [
+          {n: "pow-exp.ll", m: 18, t: 476},
+          {n: "pow_fp_int.ll", m: 6, t: 418},
+          {n: "shift-amount-reassociation-in-bittest.ll", m: 99, t: 681}
+        ]},
+        {n: "LoopUnroll", m: 107, t: 10894, children: [
+          {n: "unroll-header-exiting-with-phis.ll", m: 107, t: 107}
+        ]},
+        {n: "SpeculateAroundPHIs", m: 44, t: 737, children: [
+          {n: "pr42991.ll", m: 44, t: 44}
+        ]}
+      ]},
+      {n: "tools", m: 23, t: 256636, children: [
+        {n: "llvm-objcopy", m: 23, t: 13780, children: [
+          {n: "ELF", m: 23, t: 11461, children: [
+            {n: "respect-umask.test", m: 23, t: 37}
+          ]}
+        ]}
+      ]}
+    ]},
+    {n: "unittests", m: 7, t: 125573, children: [
+      {n: "Support", m: 7, t: 26727, children: [
+        {n: "TargetParserTest.cpp", m: 7, t: 1135}
+      ]}
+    ]},
+    {n: "utils", m: 89, t: 161130, children: [
+      {n: "benchmark", m: 17, t: 14138, children: [
+        {n: "README.LLVM", m: 2, t: 27},
+        {n: "src", m: 15, t: 5051, children: [
+          {n: "cycleclock.h", m: 15, t: 192}
+        ]}
+      ]},
+      {n: "gn", m: 44, t: 18254, children: [
+        {n: "secondary", m: 44, t: 16702, children: [
+          {n: "clang-tools-extra", m: 22, t: 2066, children: [
+            {n: "clang-include-fixer", m: 18, t: 102, children: [
+              {n: "plugin", m: 18, t: 18, children: [
+                {n: "BUILD.gn", m: 18, t: 18}
+              ]}
+            ]},
+            {n: "clang-tidy", m: 3, t: 731, children: [
+              {n: "plugin", m: 3, t: 41, children: [
+                {n: "BUILD.gn", m: 3, t: 41}
+              ]}
+            ]},
+            {n: "clangd", m: 1, t: 634, children: [
+              {n: "BUILD.gn", m: 1, t: 134}
+            ]}
+          ]},
+          {n: "clang", m: 18, t: 2941, children: [
+            {n: "tools", m: 18, t: 414, children: [
+              {n: "libclang", m: 18, t: 102, children: [
+                {n: "BUILD.gn", m: 18, t: 102}
+              ]}
+            ]}
+          ]},
+          {n: "libcxx", m: 4, t: 584, children: [
+            {n: "src", m: 4, t: 310, children: [
+              {n: "BUILD.gn", m: 4, t: 310}
+            ]}
+          ]}
+        ]}
+      ]},
+      {n: "lit", m: 17, t: 9002, children: [
+        {n: "lit", m: 2, t: 5979, children: [
+          {n: "__init__.py", m: 2, t: 10}
+        ]},
+        {n: "setup.py", m: 2, t: 77},
+        {n: "tests", m: 13, t: 2716, children: [
+          {n: "lit.cfg", m: 13, t: 76}
+        ]}
+      ]},
+      {n: "llvm-build", m: 2, t: 1353, children: [
+        {n: "llvmbuild", m: 2, t: 1342, children: [
+          {n: "main.py", m: 2, t: 853}
+        ]}
+      ]},
+      {n: "release", m: 9, t: 1692, children: [
+        {n: "test-release.sh", m: 9, t: 629}
+      ]}
+    ]}
+  ]},
+  {n: "polly", m: 2, t: 528516, children: [
+    {n: "test", m: 2, t: 89211, children: [
+      {n: "DeLICM", m: 2, t: 4296, children: [
+        {n: "reduction_looprotate_hoisted.ll", m: 2, t: 101}
+      ]}
+    ]}
+  ]}
+]};
+</script>
+<script src="https://weliveindetail.github.io/git-baobab/baobab-static.v0.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script>
+  function showOnGithub(d) {
+    const url = "https://github.com/llvm/llvm-project/compare/c89a3d78f43d81b9cff7b9248772ddf14d21b749..e82a53603ae3fed2215a44b5ac603db00a780c02#diff-";
+    const relPath = concatPath(d).slice(6 + 1); // account for slash
+    window.open(url + md5(relPath), '_blank');
+  }
+
+  baobab.arcShapes
+    .filter(d => !d.children)
+    .style("cursor", "pointer")
+    .on("click", d => showOnGithub(d));
+</script>
+
+<script>
+(function() {
+  var regex = /[?&]([^=#]+)=([^&#]*)/g,
+      url = window.location.href,
+      params = {},
+      match;
+  while(match = regex.exec(url)) {
+    params[match[1]] = match[2];
+  }
+
+  if (params["path"]) {
+    var path = params["path"].split("/");
+    var select = baobab.root;
+    for (var i = 1; i < path.length; i++) {
+      const child = select.children.find(node => node.data["n"] == path[i]);
+      if (child && child["children"])
+        select = child
+      else
+        break;
+    }
+    selectAsNewRoot(select);
+  }
+})();
+</script>
+</body>
